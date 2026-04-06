@@ -23,6 +23,13 @@ schedule:
   heading: "Schedule"
   time_column: "Time"
   session_column: "Session"
+  facilitators_label: "Facilitators"
+  session_types:
+    break: "Break"
+    keynote: "Keynote"
+    discussion: "Discussion"
+    workshop: "Workshop"
+    ceremony: "Ceremony"
 
 people:
   heading: "People"

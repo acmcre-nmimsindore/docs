@@ -6,14 +6,18 @@
 - time: "09:30"
   end_time: "10:00"
   title: "Registration"
+  title_hi: "पंजीकरण"
   type: break
   description: "Registration, morning tea, and networking"
+  description_hi: "पंजीकरण, सुबह की चाय और परिचय"
 
 - time: "10:00"
   end_time: "10:30"
   title: "Opening"
+  title_hi: "उद्घाटन"
   type: keynote
   description: "Introduction to COMPUTE and regional events, and the day's agenda"
+  description_hi: "COMPUTE और क्षेत्रीय कार्यक्रमों का परिचय तथा दिन का एजेंडा"
   speakers:
     - mrityunjay-kumar
     - prajish-prasad
@@ -21,8 +25,10 @@
 - time: "10:30"
   end_time: "11:30"
   title: "Discussion Forum"
+  title_hi: "चर्चा सत्र"
   type: discussion
   description: "Discussion on CS education topics with practical perspectives from invited speakers."
+  description_hi: "CS शिक्षा के विषयों पर चर्चा और आमंत्रित वक्ताओं के व्यावहारिक दृष्टिकोण।"
   speakers:
     - mrityunjay-kumar
     - prajish-prasad
@@ -30,25 +36,33 @@
 - time: "11:30"
   end_time: "13:30"
   title: "Educator Workshop"
+  title_hi: "शिक्षक कार्यशाला"
   type: workshop
   description: "Hands-on workshop for CS educators to develop teaching ideas and experience reports."
+  description_hi: "CS शिक्षकों के लिए व्यवहारिक कार्यशाला, जिसमें शिक्षण विचार और अनुभव रिपोर्ट विकसित की जाएंगी।"
   speaker: prajish-prasad
 
 - time: "13:30"
   end_time: "15:00"
   title: "Lunch"
+  title_hi: "भोजनावकाश"
   type: break
   description: "Lunch and networking"
+  description_hi: "भोजन और नेटवर्किंग"
 
 - time: "15:00"
   end_time: "17:30"
   title: "Researcher Workshop"
+  title_hi: "शोधकर्ता कार्यशाला"
   type: workshop
   description: "Workshop for CS education researchers working on paper submissions or study designs."
+  description_hi: "CS शिक्षा शोधकर्ताओं के लिए कार्यशाला, जिसमें पेपर सबमिशन और अध्ययन डिजाइन पर काम होगा।"
   speaker: mrityunjay-kumar
 
 - time: "17:30"
   end_time: "18:00"
   title: "Closing"
+  title_hi: "समापन"
   type: ceremony
   description: "Key takeaways from the event and wrap-up."
+  description_hi: "कार्यक्रम की मुख्य सीख और समापन।"

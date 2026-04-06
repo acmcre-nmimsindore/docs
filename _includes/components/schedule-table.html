@@ -41,12 +41,19 @@ Strings: site.data.strings[lang].schedule
             {{ session.time }}{% if session.end_time %} – {{ session.end_time }}{% endif %}
           </td>
           <td>
+            {% assign session_type_label = strings.schedule.session_types[session.type] | default: session.type %}
+            {% assign session_title = session.title %}
+            {% assign session_description = session.description %}
+            {% if lang == "hi" %}
+              {% assign session_title = session.title_hi | default: session.title %}
+              {% assign session_description = session.description_hi | default: session.description %}
+            {% endif %}
             <span class="session-type session-type--{{ session.type }}">
-              {{ session.type }}
+              {{ session_type_label }}
             </span>
-            <strong class="d-block mt-1">{{ session.title }}</strong>
-            {% if session.description %}
-              <small class="text-muted">{{ session.description }}</small>
+            <strong class="d-block mt-1">{{ session_title }}</strong>
+            {% if session_description %}
+              <small class="text-muted">{{ session_description }}</small>
             {% endif %}
             {% if session.speaker %}
               {% assign speaker = all_speakers | where: "id", session.speaker | first %}
@@ -64,7 +71,7 @@ Strings: site.data.strings[lang].schedule
             {% endif %}
             {% if session.facilitators %}
               <small class="d-block text-muted">
-                Facilitators:
+                {{ strings.schedule.facilitators_label | default: "Facilitators" }}:
                 {% for facilitator_id in session.facilitators %}
                   {% assign facilitator = all_speakers | where: "id", facilitator_id | first %}
                   {% if facilitator %}

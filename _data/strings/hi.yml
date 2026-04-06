@@ -23,6 +23,13 @@ schedule:
   heading: "कार्यक्रम"
   time_column: "समय"
   session_column: "सत्र"
+  facilitators_label: "सत्र संचालक"
+  session_types:
+    break: "विराम"
+    keynote: "मुख्य सत्र"
+    discussion: "चर्चा"
+    workshop: "कार्यशाला"
+    ceremony: "समापन"
 
 people:
   heading: "लोग"
