@@ -32,7 +32,14 @@ permalink: /hi/flyer/
   </div>
   <div class="flyer-detail">
     <span class="flyer-detail-label">शुल्क</span>
-    <span class="flyer-detail-value">{% if site.data.config.site.registration and site.data.config.site.registration.free %}निःशुल्क पंजीकरण{% elsif site.data.config.site.registration and site.data.config.site.registration.form_url %}पंजीकरण खुला है{% else %}पंजीकरण विवरण के लिए वेबसाइट देखें{% endif %}</span>
+    {% if site.data.config.site.registration and site.data.config.site.registration.free %}
+      {% assign fee_text = "निःशुल्क पंजीकरण" %}
+    {% elsif site.data.config.site.registration and site.data.config.site.registration.form_url %}
+      {% assign fee_text = "पंजीकरण खुला है" %}
+    {% else %}
+      {% assign fee_text = "पंजीकरण विवरण के लिए वेबसाइट देखें" %}
+    {% endif %}
+    <span class="flyer-detail-value">{{ fee_text }}</span>
   </div>
 </div>
 
