@@ -13,18 +13,18 @@ permalink: /hi/flyer/
 </div>
 
 <div class="flyer-header">
-  <h1 class="flyer-title">ACM COMPUTE<br>क्षेत्रीय कार्यक्रम</h1>
-  <p class="flyer-subtitle">CS शिक्षकों और शोधकर्ताओं को जोड़ना</p>
+  <h1 class="flyer-title">{{ site.data.config.site.event_name }}</h1>
+  <p class="flyer-subtitle">{{ site.data.config.site.tagline }}</p>
 </div>
 
 <div class="flyer-details">
   <div class="flyer-detail">
     <span class="flyer-detail-label">तिथि</span>
-    <span class="flyer-detail-value">शुक्रवार, 1 मई 2026</span>
+    <span class="flyer-detail-value">{{ site.data.config.site.date_display }}</span>
   </div>
   <div class="flyer-detail">
     <span class="flyer-detail-label">समय</span>
-    <span class="flyer-detail-value">सुबह 9:30 – शाम 6:00</span>
+    <span class="flyer-detail-value">{{ site.data.config.site.time }}</span>
   </div>
   <div class="flyer-detail">
     <span class="flyer-detail-label">स्थान</span>
@@ -32,7 +32,7 @@ permalink: /hi/flyer/
   </div>
   <div class="flyer-detail">
     <span class="flyer-detail-label">शुल्क</span>
-    <span class="flyer-detail-value">निःशुल्क पंजीकरण</span>
+    <span class="flyer-detail-value">{% if site.data.config.site.registration.free %}निःशुल्क पंजीकरण{% else %}पंजीकरण खुला है{% endif %}</span>
   </div>
 </div>
 
@@ -50,7 +50,7 @@ permalink: /hi/flyer/
 <div class="flyer-cta">
   <div class="flyer-cta-left">
     <p class="flyer-cta-text">अभी पंजीकरण करें</p>
-    <p class="flyer-url">acm-cre.github.io/register</p>
+    <p class="flyer-url">{{ '/hi/register/' | absolute_url }}</p>
 {% if site.features.sponsors %}
     <div class="flyer-sponsor">
       <span>प्रायोजक</span>
