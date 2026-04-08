@@ -25,7 +25,7 @@ alternate:
     </p>
 
     <div class="alert alert-info mb-4">
-      Pls fill this php form and put your name under student name, and event name as CRE COMPUTE, and event type as conference registration.
+      Please complete this PHP form and enter your name in the Student Name field, CRE COMPUTE in the Event Name field, and conference registration in the Event Type field.
     </div>
 
     <div class="mb-4 text-center">
