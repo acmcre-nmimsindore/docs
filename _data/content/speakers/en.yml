@@ -1,20 +1,19 @@
 # People for ACM COMPUTE Regional Event - SVKM's NMIMS Indore
 
-keynote:
-  - id: mrityunjay-kumar
-    name: "Mrityunjay Kumar"
-    affiliation: "Associate Professor (Off Campus), Department of Computer Science & Information Systems, BITS Pilani"
-
-  - id: prajish-prasad
-    name: "Prajish Prasad"
-    affiliation: "Assistant Professor, Department of Computing and Data Sciences, FLAME University, Pune"
+keynote: []
 
 facilitators: []
 
 organisers:
-  - id: nmims-indore-team
-    name: "SVKM's NMIMS Indore Team"
-    affiliation: "SVKM's NMIMS Indore"
+  - id: mrityunjay-kumar
+    name: "Mrityunjay Kumar"
+    affiliation: "BITS Pilani WILP"
+  - id: prajish-prasad
+    name: "Prajish Prasad"
+    affiliation: "FLAME University"
+  - id: manu-awasthi
+    name: "Manu Awasthi"
+    affiliation: "IIT Gandhinagar"
   - id: shruti-sharma
     name: "Shruti Sharma"
     affiliation: "NMIMS Indore"
